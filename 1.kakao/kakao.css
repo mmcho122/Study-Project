@@ -3,87 +3,133 @@
     margin: 0;
     padding: 0;
 }
-
 body {
+    font-family: 'Noto Sans KR', sans-serif;
     background-size: cover;
     background-position: center center;
     height: 100vh;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
+    padding: 20px 200px;
 }
-
-a {
+a, .wrap_item{
     text-decoration: none;
 }
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 110px;
 }
-
 .logo {
     cursor: pointer;
     width: 75px;
-
 }
-
-.nav-menu {
+.nav-menu, .txt_keyword {
     list-style: none;
 }
-
 .nav-menu li {
     display: inline-block;
     padding: 0 25px;
     text-transform: uppercase;
+    letter-spacing: -0.1em;
 }
-
 .nav-menu li a {
-    /* transition: .3s; */
+    font-weight: 400;
+    transition: .3s;
     color: #000;
 }
-
-.nav-menu li a:hover {
-    opacity: 40%;
+.nav-menu:hover li a {
+    color: gainsboro;
 }
 
+.nav-menu li:hover a{
+    color: black;
+}
 .icon {
     cursor: pointer;
     color: #fff;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 16px;
-    /* padding: 10px 30px; */
-    /* border-radius: 5px;
-    background: red; */
 }
-
-main{
+main {
     align-items: center;
-    padding: 90px 110px;
-
+    padding: 100px 0;
 }
-.day {
+.item_card{
+    position: relative;
+    overflow: hidden;
+    width: 630px;
+    height: 700px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.day, .item_cont, .wrap_item {
     display: flex;
 }
-
 .main_content img {
     width: 70px;
 }
-
-.main_content h1 {
+.wrap_cont{
+    display: block;
+    padding: 20px 0 10px 30px;
+}
+.item_cont img{
+    width: 40px;
+}
+.main_content{
+    letter-spacing: -0.1em;
+}
+.main_content h1,p {
     line-height: 50px;
     font-size: 45px;
     font-weight: 700;
-    line-height: 70px;
+    margin-left: 10px;   
+}
+.main_content p {
+    margin-top: -5px;
+}
+.info_text{
+    position: relative;
+    font-size: 13px;
+    font-weight: 400;
     margin-left: 10px;
     letter-spacing: -0.05em;
+    width: 72px;
+    height: 34px;
+    background-color: #eee;
+    border-radius: 10px;
+    padding-top: 8px;
+    text-align: center;
 }
-
-.main_content p {
-    font-size: 46px;
-    font-weight: 700;
+.info_box{
+    position: absolute;
+    /* display: inline; */
+    top:20px;
+    left:63px;
+    width: 16px;
+    height: 16px;
+    transform: rotate(-10deg);
+}
+.txt_keyword {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 270px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+.txt_card{
+    display:block;
     margin-top: 10px;
-    letter-spacing: -0.05em;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    align-items: center;
+    color: black;
+}
+.thumb_img{
+    position: absolute;
+    object-fit: cover;
 }
