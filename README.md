@@ -1,1 +1,1 @@
-# Study-Project
+# lazy_study
