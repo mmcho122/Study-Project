@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃연습_re</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style_re_2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="sr_only">영화 정보</h1>
+    <section class="app">
+        <section class="movie">
+            <!-- <h2 class="sr_only">영화 추천 정보</h2> -->
+            <article class="poster-container">
+                <h2 class="sr_only">영화 포스터</h2>
+                <img src="img/poster.jpg" alt="">
+            </article>
+            <article class="cont">
+                <header>
+                    <div class="cont__subtit">
+                        <span>드라마</span>
+                        <span>전체이용가</span>
+                    </div>
+                    <div class="cont__tit">
+                        <h2 class="sr_only">비긴 어게인</h2>
+                        <img src="./img/tit.png" alt="">
+                    </div>
+                </header>
+                        <input type="checkbox" id="btn-fav">
+                        <label for="btn-fav">
+                            <img src="./img/icon_thumbs-up_02.png" alt="추천을 할 수 있습니다." class="btn-fav__img">
+                        </label>
+                        <input type="checkbox" id="btn-luv">
+                        <label for="btn-luv">
+                            <img src="./img/icon_heart_2_02.png" alt="추천을 할 수 있습니다." class="btn-luv__img">
+                        </label>
+                <div class="star-wrap">
+                    <!-- <h2 class="sr_only">영화 별점 정보</h2> -->
+                    <figure class="star__cont">
+                        <figcaption>별점 평균 <span class="score">4.5</span></figcaption>
+                        <img src="img/icon_star_1.png" alt="별로에요..">
+                        <img src="img/icon_star_1.png" alt="나쁘지 않아요.">
+                        <img src="img/icon_star_1.png" alt="그저 그래요.">
+                        <img src="img/icon_star_2.png" alt="좋아요.">
+                        <img src="img/icon_star_3_1.png" alt="최고에요!">
+                    </figure>
+                    <button>
+                        <img src="img/x-cicle.png" alt="별점 취소하기." class="star_remove ">
+                    </button>
+                </div>
+            </article>
+        </section>
+    </section>
+</body>
+
+</html>
