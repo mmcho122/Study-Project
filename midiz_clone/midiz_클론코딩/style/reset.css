@@ -33,6 +33,7 @@ body {
 }
 ol, ul {
 	list-style: none;
+	color: inherit;
 }
 blockquote, q {
 	quotes: none;
@@ -48,4 +49,13 @@ table {
 }
 a {
 	text-decoration: none;
+	color: inherit;
+}
+button {
+	border: none;
+	background-color: transparent;
+}
+li {
+	padding: 0;
+	margin: 0;
 }
