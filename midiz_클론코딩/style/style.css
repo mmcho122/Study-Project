@@ -46,7 +46,6 @@
 
 .header__search label {
     font-weight: 600;
-
 }
 
 .header__search input {
@@ -67,40 +66,27 @@
     border-bottom: 1px solid #BCBCBC;
 }
 
-.header__login {
+.link-menu {
     position: relative;
     display: flex;
-    /* justify-content: space-between; */
     margin: 0 10px;
 }
 
-.header__login li:nth-child(1) {
+.link-menu li:nth-child(1) {
     margin-right: -5px;
 }
 
-.header__login li:nth-child(2) {
+.link-menu li:nth-child(2) {
     margin-right: -5px;
 }
 
-.header__login .icon-comp,
-.header__login .icon-cart  {
-}
-
-.header__gnb .header__login .icon-comp::before,
-.header__gnb .header__login .icon-cart::before {
-    background-image: url('../src/compare.png');
-    background-size: 14px;
-    width: 14px;
-    height: 14px;
-}
-
-.header__login li, .header__login li a {
+.link-menu li, .link-menu li a {
     letter-spacing: -0.3px;
     margin-left: 20px;
     color: #000;
 }
 
-.header__login li a:hover,  {
+.link-menu li a:hover {
     color: #002BD2;
 }
 
@@ -175,7 +161,6 @@
     display: inline-block;
     font-size: 12px;
     height: 18px;
-    
 }
 
 .dropdown-content {
@@ -195,11 +180,11 @@
 
 /* main */
 .main-cont {
-    width: 600px;
     height: 920px;
     display: flex;
-    justify-content: space-between;
+    gap: 70px;
     padding-top: 60px;
+    border-bottom: 1px solid #000;
 }
 
 .main-img {
@@ -213,7 +198,7 @@
     width: 30px;
     height: 30px;
     background-size: 50px;
-    cursor: pointer;
+    object-fit: cover;
 }
 
 .main-tit {
@@ -283,35 +268,32 @@
     object-fit: cover;
 }
 
-/* item section */
-.items {
-    border-top: 1px solid #000;
-    padding: 80px 250px;
+/* list-section */
+.list-section {
+    width: 1220px;
+    position: relative;
+    margin: 0 auto;
+    padding: 80px 0 40px 0;
 }
 
-.items-tit {
-    font-size: 34px;
-    font-weight: 400;
-    line-height: 44px;
+.list-section .tit-section {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 40px;
 }
 
-.items-wrap {
+.list-items-wrap {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 35px;
+    flex-direction: row;
+    gap: 120px;
 }
 
-.items-list {
-    display: flex;
-    justify-content: space-between;
-}
-.items-list-left, .items-list-right {
-    width: 560px;
-    /* display: flex;
-    justify-content: space-between; */
+.list-col .list-item a:hover {
+    opacity: 85%;
 }
 
-.item-first-wrap .item-first .item-img{
+/* task-chair */
+.item-task-chair2 .item-img1 {
     display: block;
     cursor: pointer;
     width: 560px;
@@ -319,56 +301,76 @@
     object-fit: cover;
 }
 
-.item-img:hover, .item-img-second:hover, 
-.item-img-third:hover, .item-img-fourth:hover {
-    opacity: 85%;
-}
-
-.item-second-wrap .item-second .item-img-second {
-    display: block;
-    cursor: pointer;
-    width: 560px;
-    height: 560px;
-    object-fit: cover;
-}
-
-.item-third-wrap .item-third .item-img-third {
-    display: block;
-    cursor: pointer;
-    width: 560px;
-    height: 670px;
-    object-fit: cover;
-}
-
-.item-fourth-wrap .item-fourth .item-img-fourth {
-    display: block;
-    cursor: pointer;
-    width: 560px;
-    height: 460px;
-    object-fit: cover;
-}
-
-.item-tit{
-    display: block;
-    margin: 30px 0 10px 0;
-    /* width: 100%; */
-    font-weight: bold;
+.list-item .tit-items-chair {
+    font-weight: 900;
     font-size: 50px;
     line-height: 65px;
     text-align: center;
+    margin: 30px 0 10px;
 }
 
-.item-subtxt {
-    display: block;
-    margin-bottom: 60px;
-    /* width: 100%; */
+.list-item .desc-task-chair {
+    margin-bottom: 70px;
     font-weight: 400;
     font-size: 24px;
     line-height: 31px;
     text-align: center;
 }
 
-.items-second {
+.item-img1 {
+    width: 560px;
+    height: 800px;
+    object-fit: cover;
+}
+
+.item-img2 {
+    width: 560px;
+    height: 560px;
+    object-fit: cover;
+}
+
+.item-img3 {
+    width: 560px;
+    height: 680px;
+    object-fit: cover;
+}
+
+.item-img4 {
+    width: 560px;
+    height: 460px;
+    object-fit: cover;
+}
+
+.btn-all {
+    position: absolute;
+    top: 90px;
+    right: 80px;
+    color: #002BD2;
+    font-size: 16px;
+}
+
+.list-section .btn-all:hover {
+    border-bottom: 1px solid #002BD2;
+}
+
+.kids-chair-section {
     border-top: 1px solid #000;
-    padding: 80px 250px;
+}
+
+.list-items-wrap .kids-chair-col {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.kids-chair-img {
+    width: 340px;
+    height: 500px;
+}
+
+.desc-kids-chair {
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
 }
